@@ -30,29 +30,29 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="bg-gradient-section py-16 lg:py-24">
-      <div className="container">
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-center text-primary mb-12 lg:mb-16">
+    <section className="bg-gradient-section parchment-texture py-12 sm:py-16 lg:py-24">
+      <div className="container px-4 sm:px-6">
+        <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-foreground mb-8 sm:mb-12 lg:mb-16 px-2">
           Benefícios que você terá já na{" "}
           <span className="text-gradient-gold">primeira semana</span>:
         </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
               <div
                 key={index}
-                className="bg-card rounded-2xl p-6 lg:p-8 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1 animate-scale-in group"
+                className="bg-card/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-medieval border border-primary/10 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 animate-scale-in group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                  <Icon className="h-7 w-7 text-primary" />
+                <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-primary/10 flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/20 transition-colors">
+                  <Icon className="h-5 w-5 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                <h3 className="font-display text-base sm:text-lg lg:text-xl font-semibold text-foreground mb-2 sm:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
