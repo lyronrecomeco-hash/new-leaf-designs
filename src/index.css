@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Uncial+Antiqua&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,47 +7,50 @@
 @layer base {
   :root {
     --background: 40 30% 98%;
-    --foreground: 220 25% 15%;
+    --foreground: 25 30% 12%;
 
-    --card: 40 25% 96%;
-    --card-foreground: 220 25% 15%;
+    --card: 35 35% 95%;
+    --card-foreground: 25 30% 12%;
 
-    --popover: 40 25% 96%;
-    --popover-foreground: 220 25% 15%;
+    --popover: 35 35% 95%;
+    --popover-foreground: 25 30% 12%;
 
-    --primary: 35 90% 50%;
+    --primary: 35 80% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 60% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 25 60% 20%;
+    --secondary-foreground: 40 30% 95%;
 
-    --muted: 40 15% 90%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 35 20% 88%;
+    --muted-foreground: 25 20% 40%;
 
-    --accent: 35 85% 55%;
+    --accent: 35 75% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 35 90% 50%;
+    --border: 35 25% 85%;
+    --input: 35 25% 85%;
+    --ring: 35 80% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom tokens */
-    --gradient-gold: linear-gradient(135deg, hsl(35, 90%, 50%) 0%, hsl(45, 95%, 60%) 50%, hsl(35, 90%, 50%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(40, 30%, 98%) 0%, hsl(40, 25%, 94%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(40, 25%, 94%) 0%, hsl(40, 30%, 98%) 100%);
-    --gradient-dark: linear-gradient(135deg, hsl(220, 60%, 20%) 0%, hsl(220, 50%, 30%) 100%);
+    /* Custom tokens - Medieval/Ancient theme */
+    --gradient-gold: linear-gradient(135deg, hsl(35, 80%, 45%) 0%, hsl(42, 85%, 55%) 50%, hsl(35, 80%, 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(35, 30%, 97%) 0%, hsl(35, 35%, 92%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(35, 35%, 92%) 0%, hsl(35, 30%, 97%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(25, 50%, 15%) 0%, hsl(25, 40%, 22%) 100%);
+    --gradient-parchment: linear-gradient(180deg, hsl(35, 40%, 94%) 0%, hsl(40, 35%, 90%) 50%, hsl(35, 40%, 94%) 100%);
     
-    --shadow-soft: 0 4px 20px -2px hsl(35 90% 50% / 0.15);
-    --shadow-card: 0 8px 30px -8px hsl(220 25% 15% / 0.1);
-    --shadow-glow: 0 0 40px hsl(35 90% 50% / 0.25);
+    --shadow-soft: 0 4px 20px -2px hsl(35 80% 45% / 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 12% / 0.12);
+    --shadow-glow: 0 0 40px hsl(35 80% 45% / 0.25);
+    --shadow-medieval: 0 10px 40px -10px hsl(25 50% 15% / 0.2);
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Source Sans 3', sans-serif;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Crimson Pro', serif;
+    --font-uncial: 'Uncial Antiqua', cursive;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -60,33 +63,33 @@
   }
 
   .dark {
-    --background: 220 25% 10%;
-    --foreground: 40 25% 95%;
+    --background: 25 30% 8%;
+    --foreground: 35 30% 95%;
 
-    --card: 220 25% 12%;
-    --card-foreground: 40 25% 95%;
+    --card: 25 30% 12%;
+    --card-foreground: 35 30% 95%;
 
-    --popover: 220 25% 12%;
-    --popover-foreground: 40 25% 95%;
+    --popover: 25 30% 12%;
+    --popover-foreground: 35 30% 95%;
 
-    --primary: 35 90% 55%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 35 80% 50%;
+    --primary-foreground: 25 30% 8%;
 
-    --secondary: 220 40% 35%;
-    --secondary-foreground: 40 25% 95%;
+    --secondary: 25 35% 30%;
+    --secondary-foreground: 35 30% 95%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 40 15% 65%;
+    --muted: 25 25% 18%;
+    --muted-foreground: 35 20% 60%;
 
-    --accent: 35 85% 60%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 35 75% 55%;
+    --accent-foreground: 25 30% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 35 90% 55%;
+    --border: 25 25% 20%;
+    --input: 25 25% 20%;
+    --ring: 35 80% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -127,6 +130,10 @@
     font-family: var(--font-body);
   }
 
+  .font-uncial {
+    font-family: var(--font-uncial);
+  }
+
   .bg-gradient-gold {
     background: var(--gradient-gold);
   }
@@ -143,6 +150,10 @@
     background: var(--gradient-dark);
   }
 
+  .bg-gradient-parchment {
+    background: var(--gradient-parchment);
+  }
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
@@ -155,11 +166,41 @@
     box-shadow: var(--shadow-glow);
   }
 
+  .shadow-medieval {
+    box-shadow: var(--shadow-medieval);
+  }
+
   .text-gradient-gold {
     background: var(--gradient-gold);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Medieval decorative borders */
+  .border-ornate {
+    border: 2px solid hsl(var(--primary) / 0.3);
+    position: relative;
+  }
+
+  .border-ornate::before,
+  .border-ornate::after {
+    content: '✦';
+    position: absolute;
+    color: hsl(var(--primary));
+    font-size: 0.75rem;
+  }
+
+  .border-ornate::before {
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .border-ornate::after {
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .animate-float {
@@ -176,6 +217,10 @@
 
   .animate-scale-in {
     animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
   }
 }
 
@@ -219,6 +264,15 @@
   }
 }
 
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
 /* Delay utilities for staggered animations */
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
@@ -226,3 +280,17 @@
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
 .delay-600 { animation-delay: 600ms; }
+
+/* Parchment texture overlay */
+.parchment-texture {
+  position: relative;
+}
+
+.parchment-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
